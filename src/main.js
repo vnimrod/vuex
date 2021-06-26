@@ -22,7 +22,7 @@ const store = createStore({
     },
   },
   actions: {
-    //context will contain everything that is inside our store (the state, the mutations)
+    //context contain everything that is inside our store (the state, the mutations) we can also destructering ({commit, state})
     async addRandomNumber(context) {
       let data = await axios.get(
         'https://www.random.org/integers/?num=1&min=-1000&max=1000&col=1&base=10&format=plain&rnd=new'
